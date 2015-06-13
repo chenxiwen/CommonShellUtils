@@ -2,7 +2,7 @@
 A esay lib to use SSH2 and Telnet(Windows)
 
 If you just want to execute one command:
-  	try {
+  		try {
 			Map map = SSHHelper.execCommandWithExitCode("172.16.64.215", "root", "@WSX3edc", "?");
 			System.out.println(map.get("ExitCode"));
 			System.out.println(map.get("Result"));
@@ -57,7 +57,7 @@ If you need to execute a list of commands within one session, you can try this r
 		
 	And for Windows Telnet:
 		try {
-//			String result =new WindowsTelnetHelper().execCommand("172.16.66.110", 23, "administrator", "@WSX3edc", "echo 123456789>1.txt");
+			//String result =new WindowsTelnetHelper().execCommand("172.16.66.110", 23, "administrator","@WSX3edc", "echo 123456789>1.txt");
 			WindowsTelnetHelper wth = new WindowsTelnetHelper("172.16.66.110", "administrator", "@WSX3edc");
 			if(wth.connectToHost()){
 				wth.initIO(null);
