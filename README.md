@@ -1,7 +1,7 @@
 # CommonShellUtils
 A esay lib to use SSH2 and Telnet(Windows)
 
-If you just want to execute one command:
+	If you just want to execute one command:
   		try {
 			Map map = SSHHelper.execCommandWithExitCode("172.16.64.215", "root", "@WSX3edc", "?");
 			System.out.println(map.get("ExitCode"));
@@ -17,7 +17,7 @@ If you just want to execute one command:
 		}
 
 
-If you need to execute a list of commands within one session, you can try this reference:
+	If you need to execute a list of commands within one session, you can try this reference:
 		Vsim7ModeSSHHelper v7h = new Vsim7ModeSSHHelper("172.16.65.224", 22, "root", "netapp1!");
 		String anchor = v7h.getAnchor();
 		String result;
